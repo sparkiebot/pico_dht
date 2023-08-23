@@ -4,11 +4,11 @@ pico_generate_pio_header(dht ${CMAKE_CURRENT_LIST_DIR}/dht.pio)
 
 target_include_directories(dht
     INTERFACE
-    ./include)
+    ${CMAKE_CURRENT_LIST_DIR}/include)
 
 target_sources(dht
     INTERFACE
-    dht.c
+    ${CMAKE_CURRENT_LIST_DIR}/dht.c
 )
 
 target_link_libraries(dht
